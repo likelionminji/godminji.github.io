@@ -1,17 +1,31 @@
 <h1>~신이 <%=@name%>을(를) 만들 때~</h1>
+<br></br>
+      <% @image %>=["<%= image_tag("spoon.PNG", height:'280' , width:'350') %>" , "<%= image_tag("green.PNG", height:'280' , width:'350') %>" , "<%= image_tag("orange.PNG", height:'280' , width:'350') %>"]
+      
+      <!--멘트 및 사진 픽스-->
+      <div class="row">
+      <div class="col-md-4"><%= image_tag ("@image[0]") %>
+      <br></br>
+      <%= @results[0] %>를(을) <%= @spoon[0] %> 스푼!</div>
+      <div class="col-md-4"><%= image_tag ("@image[1]") %>
+      <br></br>
+      <%= @results[1] %>를(을) <%= @spoon[1] %> 스푼!</div>
+      <div class="col-md-4"><%= image_tag ("@image[2]")%>
+      <br></br>
+      <%= @results[2] %>를(을) <%= @spoon[2] %> 스푼!</div>
 
-<div class="row">
-      <div class="col-md-4"><%= image_tag("spoon.PNG", height:'230' , width:'290') %>
-      <br></br>
-      <%= @results[0] %>를(을) <%= @spoon[0] %> 스푼!</div>
-      <div class="col-md-4"><%= image_tag("spoon.PNG", height:'230' , width:'290') %>
-      <br></br>
-      <%= @results[0] %>를(을) <%= @spoon[0] %> 스푼!</div>
-      <div class="col-md-4"><%= image_tag("spoon.PNG", height:'230' , width:'290') %>
-      <br></br>
-      <%= @results[0] %>를(을) <%= @spoon[0] %> 스푼!</div>
-
-</div>
+      </div>
  
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 
 
